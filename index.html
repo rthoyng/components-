@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/07561ee768.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="viewImg" id="seeImg">
+        <img src="./images/img1.jpg" alt="" id="bigImg" />
+        <button onclick="closeViewImg()">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+      <div class="container-gallery">
+        <img src="./images/img1.jpg" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img2.jpg" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img3.jpg" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img4.jpg" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img5.jpg" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img6.jpg" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img7.jpg" alt="" onclick="viewImg(this.src)" />
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
