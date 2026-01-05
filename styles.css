@@ -22,6 +22,14 @@ body {
     background-color: var(--color-deeppurple)
 }
 
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+}
+
 .container-gallery {
    width: 800px;
    display: flex;
@@ -62,22 +70,27 @@ body {
     width: 500px;
 }
 
-button {
+.closeBtn {
     background-color:transparent;
-    border: none;
-    outline: none;
-    position: absolute;
     top: 5%;
     right: 5%;
-    cursor: pointer;
     color: red;
-    font-size: 30px;
     transition: color .4s ease-in-out;
 }
 
-
-button:hover {
+.closeBtn:hover {
 color: rgb(255, 156, 156);
+}
+
+.copyBtn {
+    background-color: transparent;
+    bottom: 10%;
+    color: var(--color-white);
+    transition: color .4s ease-in-out;
+}
+
+.copyBtn:hover {
+color: #b8b8b8; 
 }
 
 @keyframes fadeIn {
@@ -98,5 +111,37 @@ color: rgb(255, 156, 156);
     100% {
         opacity: 0;
         transform: scale(.5) translateY(-100px);
+    }
+}
+
+.toast-copied {
+    display: none;
+    background-color: var(--color-deeppurple);
+    color: var(--color-white);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    padding: 10px;
+    
+}
+
+.toast-copied.displayed {
+    display:block;
+    opacity: 1;
+    animation: fadeUp .4s 1;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
     }
 }

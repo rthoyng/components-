@@ -14,20 +14,28 @@
     <section>
       <div class="viewImg" id="seeImg">
         <img src="./images/img1.jpg" alt="" id="bigImg" />
-        <button onclick="closeViewImg()">
+        <button class="closeBtn" onclick="closeViewImg()">
           <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <button class="copyBtn" id="copyBtn">
+          <i class="fa-solid fa-copy"></i>
         </button>
       </div>
       <div class="container-gallery">
-        <img src="./images/img1.jpg" alt="" onclick="viewImg(this.src)" />
-        <img src="./images/img2.jpg" alt="" onclick="viewImg(this.src)" />
-        <img src="./images/img3.jpg" alt="" onclick="viewImg(this.src)" />
-        <img src="./images/img4.jpg" alt="" onclick="viewImg(this.src)" />
-        <img src="./images/img5.jpg" alt="" onclick="viewImg(this.src)" />
-        <img src="./images/img6.jpg" alt="" onclick="viewImg(this.src)" />
-        <img src="./images/img7.jpg" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img1.png" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img2.png" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img3.png" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img4.png" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img5.png" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img6.png" alt="" onclick="viewImg(this.src)" />
+        <img src="./images/img7.png" alt="" onclick="viewImg(this.src)" />
       </div>
     </section>
+    <aside>
+      <div class="toast-copied" id="copied">
+        <p>Image Copied!</p>
+      </div>
+    </aside>
 
     <script src="script.js"></script>
   </body>
